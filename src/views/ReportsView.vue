@@ -2,7 +2,7 @@
   <div class="p-4 sm:ml-64">
     <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg  ">
       <div class="flex items-center justify-center  mb-4 rounded  ">
-        <p class="text-2xl text-gray-400 ">投诉信息管理</p>
+        <p class="text-2xl text-gray-800 ">投诉信息管理</p>
       </div>
       <div class="flex  flex-col items-center justify-center  mb-2 rounded ">
         <section class="bg-white mb-10 ">

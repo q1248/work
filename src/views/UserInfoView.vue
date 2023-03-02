@@ -2,7 +2,7 @@
   <div class="p-4 sm:ml-64">
     <div class="p-4 pb-0 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 ">
       <div class="flex items-center justify-center  mb-4 rounded ">
-        <p class="text-2xl text-gray-400 dark:text-gray-500">学员报名信息</p>
+        <p class="text-2xl text-gray-800 dark:text-gray-500">学员报名信息</p>
       </div>
       <div class="flex flex-col items-center justify-center  mb-4 rounded ">
         <NDataTable :columns="columns" :data="stuData"></NDataTable>

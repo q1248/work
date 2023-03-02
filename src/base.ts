@@ -1,7 +1,7 @@
 import axios from "axios"
 
 let request = axios.create({
-  baseURL: "",
+  baseURL: "https://temp.sihuan.dev/v1/",
   timeout: 1000,
 })
 

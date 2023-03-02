@@ -14,7 +14,7 @@
           <div class="space-y-4 md:space-y-6" action="#">
             <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">账号</label>
-              <input type="email" :value="account"
+              <input type="text" :value="account"
                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="">
             </div>
@@ -33,27 +33,31 @@
 </template>
 
 <script setup lang="ts">
+import { delay } from 'lodash';
 import { ref, } from 'vue';
 import request from '../base'
 let account = ref('')
 let password = ref('')
 function login() {
-  request.post('/login', {
-    account: account.value,
+  request.post('/auth', {
+    username: account.value,
     password: password.value
   }).then(res => {
     //验证失败
-    if (res.data.code !== 200) {
-      //提示错误信息
+    if (res.status !== 200) {
       window.$message.error("账号或密码错误")
       return
     }
-    //保存token
-    //跳转到管理界面
+    const jwt = res.data.token
+    localStorage.setItem("token", jwt)
+    window.$message.success("登录成功")
+    delay(() => {
+      window.location.href = '/'
+    }, 1000)
 
   }).catch(err => {
     //提示错误信息
-    window.$message.error("账号或密码错误")
+    window.$message.error("网络请求失败")
   })
 
 }
