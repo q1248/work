@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Sidebar from './components/Sidebar.vue';
 import { useMutationObserver } from '@vueuse/core';
 import { NDialogProvider, NMessageProvider } from 'naive-ui';
 
@@ -33,7 +32,6 @@ useMutationObserver(
 </script>
 
 <template>
-  <Sidebar></Sidebar>
   <NMessageProvider>
     <NDialogProvider>
       <GlobalContainer>

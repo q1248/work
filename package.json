@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@vueuse/core": "^9.12.0",
+    "axios": "^1.3.4",
     "flowbite": "^1.6.3",
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue-upload-imgs": "^2.0.3"
   },
   "devDependencies": {
     "@types/node": "^18.11.12",

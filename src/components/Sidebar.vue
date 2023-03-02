@@ -24,7 +24,7 @@
           </a>
         </li>
         <li>
-          <a href="#"
+          <router-link to="/userinfo"
             class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
             <svg aria-hidden="true"
               class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -34,12 +34,10 @@
               </path>
             </svg>
             <span class="flex-1 ml-3 whitespace-nowrap">报名信息管理</span>
-            <span
-              class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#"
+          <router-link to="/reports"
             class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
             <svg aria-hidden="true"
               class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -52,25 +50,23 @@
               </path>
             </svg>
             <span class="flex-1 ml-3 whitespace-nowrap">投诉信息管理</span>
-            <span
-              class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#"
+          <router-link to="/setting"
             class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-            <svg aria-hidden="true"
+            <svg fill="currentColor" viewBox="0 0 20 20"
               class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-              fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                clip-rule="evenodd"></path>
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path clip-rule="evenodd" fill-rule="evenodd"
+                d="M7.84 1.804A1 1 0 018.82 1h2.36a1 1 0 01.98.804l.331 1.652a6.993 6.993 0 011.929 1.115l1.598-.54a1 1 0 011.186.447l1.18 2.044a1 1 0 01-.205 1.251l-1.267 1.113a7.047 7.047 0 010 2.228l1.267 1.113a1 1 0 01.206 1.25l-1.18 2.045a1 1 0 01-1.187.447l-1.598-.54a6.993 6.993 0 01-1.929 1.115l-.33 1.652a1 1 0 01-.98.804H8.82a1 1 0 01-.98-.804l-.331-1.652a6.993 6.993 0 01-1.929-1.115l-1.598.54a1 1 0 01-1.186-.447l-1.18-2.044a1 1 0 01.205-1.251l1.267-1.114a7.05 7.05 0 010-2.227L1.821 7.773a1 1 0 01-.206-1.25l1.18-2.045a1 1 0 011.187-.447l1.598.54A6.993 6.993 0 017.51 3.456l.33-1.652zM10 13a3 3 0 100-6 3 3 0 000 6z">
+              </path>
             </svg>
             <span class="flex-1 ml-3 whitespace-nowrap">前端管理</span>
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#"
+          <router-link to="/modify"
             class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
             <svg aria-hidden="true"
               class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -79,10 +75,10 @@
               </path>
             </svg>
             <span class="flex-1 ml-3 whitespace-nowrap">密码修改</span>
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#"
+          <router-link to="/login"
             class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
             <svg aria-hidden="true"
               class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -92,10 +88,10 @@
                 clip-rule="evenodd"></path>
             </svg>
             <span class="flex-1 ml-3 whitespace-nowrap">登录</span>
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#"
+          <router-link to="#" @click="logout"
             class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
             <svg aria-hidden="true"
               class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -105,20 +101,39 @@
                 clip-rule="evenodd"></path>
             </svg>
             <span class="flex-1 ml-3 whitespace-nowrap">注销</span>
-          </a>
+          </router-link>
         </li>
       </ul>
     </div>
   </aside>
-
 </template>
 <script setup lang="ts">
 import application from './icons/application.vue';
-
 import { initDrawers } from 'flowbite'
 import { onMounted } from 'vue';
-
+import { RouterLink } from 'vue-router';
+import { delay } from 'lodash';
 onMounted(() => {
   initDrawers();
 });
+
+function logout() {
+  window.$dialog.warning({
+    title: '注销',
+    content: '确定要注销吗？',
+    positiveText: '确定',
+    negativeText: '取消',
+    onPositiveClick(e) {
+      //删除cookie
+      localStorage.removeItem('token');
+      window.$message.success('注销成功');
+      delay(() => {
+        window.location.href = '/login';
+      }, 1000);
+    },
+    onNegativeClick(e) {
+      window.$message.success('取消注销');
+    },
+  });
+}
 </script>
